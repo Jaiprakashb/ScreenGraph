@@ -7,6 +7,7 @@
 //
 
 #import "PDMViewController.h"
+#import "PDMGraphView.h"
 
 @interface PDMViewController ()
 
@@ -18,6 +19,11 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+}
+
+- (void) viewDidAppear:(BOOL)animated
+{
+  [PDMGraphView show];
 }
 
 - (void)didReceiveMemoryWarning

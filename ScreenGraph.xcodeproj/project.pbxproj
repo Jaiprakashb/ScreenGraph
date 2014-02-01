@@ -22,6 +22,9 @@
 		CF2885621896D5CC005869F5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF2885411896D5CB005869F5 /* UIKit.framework */; };
 		CF28856A1896D5CC005869F5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF2885681896D5CC005869F5 /* InfoPlist.strings */; };
 		CF28856C1896D5CC005869F5 /* ScreenGraphTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF28856B1896D5CC005869F5 /* ScreenGraphTests.m */; };
+		CF2885781896D613005869F5 /* PDMGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2885771896D613005869F5 /* PDMGraphView.m */; };
+		CFC2E431189C28C300D48AB9 /* TODO in Resources */ = {isa = PBXBuildFile; fileRef = CFC2E430189C28C300D48AB9 /* TODO */; };
+		CFC2E432189C28C300D48AB9 /* TODO in Resources */ = {isa = PBXBuildFile; fileRef = CFC2E430189C28C300D48AB9 /* TODO */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 		CF2885671896D5CC005869F5 /* ScreenGraphTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ScreenGraphTests-Info.plist"; sourceTree = "<group>"; };
 		CF2885691896D5CC005869F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CF28856B1896D5CC005869F5 /* ScreenGraphTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScreenGraphTests.m; sourceTree = "<group>"; };
+		CF2885761896D613005869F5 /* PDMGraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PDMGraphView.h; path = GraphView/PDMGraphView.h; sourceTree = "<group>"; };
+		CF2885771896D613005869F5 /* PDMGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PDMGraphView.m; path = GraphView/PDMGraphView.m; sourceTree = "<group>"; };
+		CFC2E430189C28C300D48AB9 /* TODO */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODO; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +90,8 @@
 		CF2885311896D5CB005869F5 = {
 			isa = PBXGroup;
 			children = (
+				CFC2E430189C28C300D48AB9 /* TODO */,
+				CF2885751896D5DB005869F5 /* GraphView */,
 				CF2885431896D5CB005869F5 /* ScreenGraph */,
 				CF2885651896D5CC005869F5 /* ScreenGraphTests */,
 				CF28853C1896D5CB005869F5 /* Frameworks */,
@@ -153,6 +161,15 @@
 				CF2885681896D5CC005869F5 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CF2885751896D5DB005869F5 /* GraphView */ = {
+			isa = PBXGroup;
+			children = (
+				CF2885761896D613005869F5 /* PDMGraphView.h */,
+				CF2885771896D613005869F5 /* PDMGraphView.m */,
+			);
+			name = GraphView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF2885541896D5CB005869F5 /* Main_iPad.storyboard in Resources */,
+				CFC2E431189C28C300D48AB9 /* TODO in Resources */,
 				CF2885591896D5CB005869F5 /* Images.xcassets in Resources */,
 				CF2885511896D5CB005869F5 /* Main_iPhone.storyboard in Resources */,
 				CF2885481896D5CB005869F5 /* InfoPlist.strings in Resources */,
@@ -243,6 +261,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFC2E432189C28C300D48AB9 /* TODO in Resources */,
 				CF28856A1896D5CC005869F5 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,6 +276,7 @@
 				CF28854E1896D5CB005869F5 /* PDMAppDelegate.m in Sources */,
 				CF2885571896D5CB005869F5 /* PDMViewController.m in Sources */,
 				CF28854A1896D5CB005869F5 /* main.m in Sources */,
+				CF2885781896D613005869F5 /* PDMGraphView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,6 +495,7 @@
 				CF2885711896D5CC005869F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CF2885721896D5CC005869F5 /* Build configuration list for PBXNativeTarget "ScreenGraphTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +504,7 @@
 				CF2885741896D5CC005869F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
